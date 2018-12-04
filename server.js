@@ -1,13 +1,15 @@
 'use strict';
 
+require('dotenv').config();
 const Hapi = require('hapi');
 const Vision = require('vision');
 const Ejs = require('ejs');
 
+
 // Create a server with a host and port
 const server = Hapi.server({
     host: 'localhost',
-    port: 8989
+    port: process.env.PORT || 8080
 });
 
 
@@ -36,17 +38,20 @@ server.route({
 
 
 // Start the server
-async function start() {
-    await server.register(Vision);
+async
+
+function start() {
+    await
+    server.register(Vision);
 
     server.views({
-        engines: { ejs: Ejs },
+        engines: {ejs: Ejs},
         relativeTo: __dirname,
         path: 'view'
     });
     try {
         await
-            server.start();
+        server.start();
     }
     catch (err) {
         console.log(err);
