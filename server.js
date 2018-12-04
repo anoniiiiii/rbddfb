@@ -38,11 +38,9 @@ server.route({
 
 
 // Start the server
-async
-
-function start() {
+async function start() {
     await
-    server.register(Vision);
+        server.register(Vision);
 
     server.views({
         engines: {ejs: Ejs},
@@ -51,7 +49,7 @@ function start() {
     });
     try {
         await
-        server.start();
+            server.start();
     }
     catch (err) {
         console.log(err);
