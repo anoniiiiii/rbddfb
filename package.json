@@ -1,0 +1,17 @@
+{
+  "name": "rbdd-heroku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "hapi": "^17.8.1",
+    "save": "^2.3.3",
+    "vision": "^5.4.3"
+  }
+}
