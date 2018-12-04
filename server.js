@@ -5,7 +5,7 @@ const Hapi = require('hapi');
 const Vision = require('vision');
 const Ejs = require('ejs');
 
-
+console.log(JSON.stringify(process.env));
 // Create a server with a host and port
 const server = Hapi.server({
     host: 'localhost',
